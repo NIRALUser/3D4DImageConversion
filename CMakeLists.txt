@@ -9,6 +9,8 @@ set(ITK_INCLUSION_MODULES
   ITKIOImageBase
   # IO Components
   ITKIONRRD
+  ITKIONIFTI
+  ITKIOMeta
 )
 
 find_package(SlicerExecutionModel REQUIRED)
