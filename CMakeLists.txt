@@ -19,10 +19,12 @@ include(${SlicerExecutionModel_USE_FILE})
 find_package(ITK 4.7 COMPONENTS ${ITK_INCLUSION_MODULES} REQUIRED )
 include(${ITK_USE_FILE})
 
-set(Filter 3DTo4DImages)
+set(Filters 3DTo4DImages 4DTo3DImages)
 
-SEMMacroBuildCLI(
-    NAME ${Filter}
-    EXECUTABLE_ONLY
-    TARGET_LIBRARIES ${ITK_LIBRARIES}
-)
+foreach(Filter ${Filters})
+  SEMMacroBuildCLI(
+      NAME ${Filter}
+      EXECUTABLE_ONLY
+      TARGET_LIBRARIES ${ITK_LIBRARIES}
+  )
+endforeach()
