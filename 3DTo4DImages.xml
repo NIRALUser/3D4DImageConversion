@@ -5,7 +5,7 @@
   <description>
    This module converts a 3D vector image to a 4D image
   </description>
-  <version>1</version>
+  <version>1.0.0</version>
   <documentation-url></documentation-url>
   <license></license>
   <contributor>Francois Budin</contributor>
